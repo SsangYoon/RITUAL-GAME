@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RITUAL GAME.CSharp", "RITUAL GAME.CSharp.csproj", "{384001AE-BA0D-9D57-2162-495BEB5790B0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RITUAL GAME.CSharp.Editor", "RITUAL GAME.CSharp.Editor.csproj", "{9E0AA0DE-F3D1-81E5-972E-17CD40C9A128}"

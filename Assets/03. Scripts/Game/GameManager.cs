@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
 
     public void Awake()
     {
+        enemyList = new List<GameObject>();
+        friendlyList = new List<GameObject>();
+
         StartCoroutine(EnemySpawn());
     }
 
@@ -24,7 +27,7 @@ public class GameManager : MonoBehaviour
         {
             yield return new WaitForSeconds(5.0f);
 
-            enemyList.Add(Instantiate(enemy, new Vector3(1500, Random.Range(0, 720), 0), new Quaternion(0, 0, 0, 1)) as GameObject);
+            enemyList.Add(Instantiate(enemy, new Vector3(15, 5, 0), new Quaternion(0, 0, 0, 1)) as GameObject);
         }
 
     }
