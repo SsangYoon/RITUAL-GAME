@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.3.1p4</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -58,12 +56,6 @@
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -138,11 +130,11 @@
     <Compile Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water\Scripts\Water.cs" />
     <Compile Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water\Scripts\WaterBase.cs" />
     <Compile Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water\Scripts\WaterTile.cs" />
-    <Compile Include="Assets\QuickSheet\GDataPlugin\Runtime\BaseDatabase.cs" />
-    <Compile Include="Assets\QuickSheet\GDataPlugin\Runtime\ExposePropertyAttribute.cs" />
-    <Compile Include="Assets\QuickSheet\Util\Cloner.cs" />
-    <Compile Include="Assets\QuickSheet\Util\CsvParser.cs" />
-    <Compile Include="Assets\QuickSheet\Util\Singleton.cs" />
+    <Compile Include="Assets\ChangeSceneLerp.cs" />
+    <Compile Include="Assets\DayManager.cs" />
+    <Compile Include="Assets\ExitApplication.cs" />
+    <Compile Include="Assets\NotDestroyOnLoad.cs" />
+    <Compile Include="Assets\VignetteController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\03. Scripts\Shader Scripts\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
@@ -216,23 +208,9 @@
     <None Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
     <None Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
     <None Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
-    <None Include="Assets\QuickSheet\ExcelPlugin\Editor\Library\NPOI.2.1.1.txt" />
-    <None Include="Assets\QuickSheet\ExcelPlugin\Templates\AssetFileClass.txt" />
-    <None Include="Assets\QuickSheet\ExcelPlugin\Templates\DataClass.txt" />
-    <None Include="Assets\QuickSheet\ExcelPlugin\Templates\PostProcessor.txt" />
-    <None Include="Assets\QuickSheet\ExcelPlugin\Templates\Property.txt" />
-    <None Include="Assets\QuickSheet\ExcelPlugin\Templates\ScriptableObjectClass.txt" />
-    <None Include="Assets\QuickSheet\ExcelPlugin\Templates\ScriptableObjectEditorClass.txt" />
-    <None Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\license.txt" />
-    <None Include="Assets\QuickSheet\GDataPlugin\Editor\Google\Google.GData.license.txt" />
-    <None Include="Assets\QuickSheet\GDataPlugin\Editor\Google\Newtonsoft.Json.xml" />
-    <None Include="Assets\QuickSheet\GDataPlugin\Editor\Google\license.txt" />
-    <None Include="Assets\QuickSheet\GDataPlugin\Editor\Google\nunit.license.txt" />
-    <None Include="Assets\QuickSheet\GDataPlugin\Templates\AssetFileClass.txt" />
-    <None Include="Assets\QuickSheet\GDataPlugin\Templates\DataClass.txt" />
-    <None Include="Assets\QuickSheet\GDataPlugin\Templates\Property.txt" />
-    <None Include="Assets\QuickSheet\GDataPlugin\Templates\ScriptableObjectClass.txt" />
-    <None Include="Assets\QuickSheet\GDataPlugin\Templates\ScriptableObjectEditorClass.txt" />
+    <None Include="Assets\Resources\XML\character.xml" />
+    <None Include="Assets\Resources\XML\enemy.xml" />
+    <None Include="Assets\Resources\XML\sacrifice.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

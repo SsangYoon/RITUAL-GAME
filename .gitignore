@@ -1,3 +1,8 @@
 *.meta
+<<<<<<< HEAD
 Temp/
 Library/
+=======
+Library/
+Temp/
+>>>>>>> 65e6f915ff48a43a9a596066f2e3f088f2214e15

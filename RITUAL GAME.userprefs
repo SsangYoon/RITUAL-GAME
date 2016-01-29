@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="RITUAL GAME.CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\03. Scripts\Game\Action\FriendlyAction.cs">
+    <Files>
+      <File FileName="Assets\03. Scripts\Game\Action\FriendlyAction.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

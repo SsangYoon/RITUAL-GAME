@@ -16,11 +16,15 @@ public class EnemyAction : MonoBehaviour {
         state = CharState.Move;
         speed = 7f;
 
-        gameManager = GetComponent<GameManager>();
+        gameManager = FindObjectOfType<GameManager>();
 
         StartCoroutine(CheckState());
     }
-
+    
+    public void Update()
+    {
+        now = Time.time;
+    }
     IEnumerator CheckState()
     {
         while (true)
@@ -33,17 +37,21 @@ public class EnemyAction : MonoBehaviour {
                 case CharState.Idle:
                     break;
                 case CharState.Move:
-                    GetComponent<Rigidbody2D>().AddForce(new Vector3(1, 0, 0) * speed);
-                    foreach(GameObject obj in gameManager.friendlyList)
+                    GetComponent<Rigidbody2D>().AddForce(new Vector3(-1, 0, 0) * speed);
+                    if(gameManager.friendlyList.Count > 0)
                     {
-                        if(obj.transform.position.x - transform.position.x <= 50)
+                        foreach (GameObject obj in gameManager.friendlyList)
                         {
-                            state = CharState.Fight;
+                            if (obj.transform.position.x - transform.position.x <= 50)
+                            {
+                                target = obj.transform;
+                                state = CharState.Fight;
+                            }
                         }
                     }
                     break;
                 case CharState.Die:
-                    gameObject.SetActive(false);
+                    DestroyObject(gameObject);
                     break;
                 case CharState.Fight:
                     if (now - attackOld <= 0.5)
@@ -57,16 +65,18 @@ public class EnemyAction : MonoBehaviour {
                     }
                     break;
                 case CharState.Attack:
-
                     break;
             }
         }
     }
     public void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.name == "Enemy")
+        if (state == CharState.Attack)
         {
-
+            if (col.gameObject.name == "Friendly")
+            {
+                col.gameObject.GetComponent<Friendly>().hp -= gameObject.GetComponent<Enemy>().ap;
+            }
         }
     }
 }

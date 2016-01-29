@@ -11,7 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbcda13c00cae4f4087d84a149a1c70b, type: 3}
   m_Name: GoogleDataSettings
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   AssetPath: Assets/QuickSheet/GDataPlugin/Editor/
+=======
+  AssetPath: 4173736574732f517569636b53686565742f4744617461506c7567696e2f456469746f722f
+>>>>>>> 65e6f915ff48a43a9a596066f2e3f088f2214e15
   runTimePath: 
   editorPath: 
   OAuth2Data:
@@ -21,6 +25,10 @@ MonoBehaviour:
     auth_provider_x509_cert_url: 
     client_secret: 
     redirect_uris: []
+<<<<<<< HEAD
   _AccessCode: Paste AcecessCode here!
+=======
+  _AccessCode: 50617374652041636563657373436f6465206865726521
+>>>>>>> 65e6f915ff48a43a9a596066f2e3f088f2214e15
   _RefreshToken: 
   _AccessToken: 
