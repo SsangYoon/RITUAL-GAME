@@ -90,27 +90,6 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Google.GData.AccessControl">
-      <HintPath>Assets\QuickSheet\GDataPlugin\Editor\Google\Google.GData.AccessControl.DLL</HintPath>
-    </Reference>
-    <Reference Include="Google.GData.Client">
-      <HintPath>Assets\QuickSheet\GDataPlugin\Editor\Google\Google.GData.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.GData.Documents">
-      <HintPath>Assets\QuickSheet\GDataPlugin\Editor\Google\Google.GData.Documents.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.GData.Extensions">
-      <HintPath>Assets\QuickSheet\GDataPlugin\Editor\Google\Google.GData.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.GData.Spreadsheets">
-      <HintPath>Assets\QuickSheet\GDataPlugin\Editor\Google\Google.GData.Spreadsheets.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\QuickSheet\GDataPlugin\Editor\Google\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>Assets\QuickSheet\GDataPlugin\Editor\Google\nunit.framework.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="RITUAL GAME.CSharp.csproj">

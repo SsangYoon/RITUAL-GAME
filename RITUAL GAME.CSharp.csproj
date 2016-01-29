@@ -130,10 +130,13 @@
     <Compile Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water\Scripts\Water.cs" />
     <Compile Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water\Scripts\WaterBase.cs" />
     <Compile Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water\Scripts\WaterTile.cs" />
+    <Compile Include="Assets\BackgroundController.cs" />
+    <Compile Include="Assets\ButtonMoveController.cs" />
     <Compile Include="Assets\ChangeSceneLerp.cs" />
     <Compile Include="Assets\DayManager.cs" />
     <Compile Include="Assets\ExitApplication.cs" />
     <Compile Include="Assets\NotDestroyOnLoad.cs" />
+    <Compile Include="Assets\SpawnResponse.cs" />
     <Compile Include="Assets\VignetteController.cs" />
   </ItemGroup>
   <ItemGroup>
