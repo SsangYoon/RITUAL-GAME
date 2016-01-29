@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEW RITUAL GAME.CSharp", "NEW RITUAL GAME.CSharp.csproj", "{1981966A-A5AD-3A00-FD93-FBEAF7A8184E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEW RITUAL GAME.CSharp.Editor", "NEW RITUAL GAME.CSharp.Editor.csproj", "{09F4D69D-B563-D0F8-E800-D73ED5EFEFC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1981966A-A5AD-3A00-FD93-FBEAF7A8184E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1981966A-A5AD-3A00-FD93-FBEAF7A8184E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1981966A-A5AD-3A00-FD93-FBEAF7A8184E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1981966A-A5AD-3A00-FD93-FBEAF7A8184E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09F4D69D-B563-D0F8-E800-D73ED5EFEFC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F4D69D-B563-D0F8-E800-D73ED5EFEFC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F4D69D-B563-D0F8-E800-D73ED5EFEFC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F4D69D-B563-D0F8-E800-D73ED5EFEFC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
