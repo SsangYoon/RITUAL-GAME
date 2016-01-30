@@ -27,7 +27,7 @@ namespace ResourceControll
 			switch (_Index)
 			{
 				case (int)ResourceIndex.HUMAN:
-					_Text.text = _ResourceManager._Human.ToString();;
+					_Text.text = _ResourceManager._Human.ToString();
 					break;
 
 				case (int)ResourceIndex.CHICKEN:
@@ -35,11 +35,11 @@ namespace ResourceControll
 					break;
 
 				case (int)ResourceIndex.PIG:
-					_Text.text = _ResourceManager._Pig.ToString();;
+					_Text.text = _ResourceManager._Pig.ToString();
 					break;
 
 				case (int)ResourceIndex.COW:
-					_Text.text = _ResourceManager._Cow.ToString();;
+					_Text.text = _ResourceManager._Cow.ToString();
 					break;
 
 				case (int)ResourceIndex.OCTOPUS:

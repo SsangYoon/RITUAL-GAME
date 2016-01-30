@@ -22,13 +22,14 @@ namespace ButtonMoveControll
 
 
 		// Use this for initialization
-		private void Awake()
+		public void Start()
 		{
 			// Get Component
 			_DayManager = GameObject.FindGameObjectWithTag("DataManager").GetComponent<DayManager>();
 
 			// Get Property
 			_GotoPosition = _MoveToObject.transform.position;
+            Debug.Log(_GotoPosition);
 
 			// Get Property
 			_ReturningPosition = this.transform.position;

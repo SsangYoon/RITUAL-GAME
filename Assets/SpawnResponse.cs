@@ -23,7 +23,7 @@ namespace ResourceControll
 
 		public void SpawnButtonResponse()
 		{
-			if (_SacrificeManager._SacrifceList.Count >= 5.0f)
+			if (_SacrificeManager._SacrifceList.Count >= 5)
 				return;
 
 			switch (_Index)
