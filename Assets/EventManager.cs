@@ -40,7 +40,10 @@ namespace Event
 			// Instantiate
 			GameObject temp = Instantiate(_Event);
 
-			int indexRandom = Random.Range(0, 5);
+
+
+			// Set Random
+			int indexRandom = Random.Range(1, 6);
 			int articleRandom = Random.Range(-5, 5);
 
 			if(articleRandom >= 0)
@@ -50,27 +53,29 @@ namespace Event
 			// Search
 			foreach (XmlNode node in _NodeList)
 			{
-				Debug.Log(_NodeList.Count);
-				Debug.Log(node.SelectSingleNode("ID").InnerText);
+				Debug.Log("OUT");
 				if (node.SelectSingleNode("ID").InnerText == indexRandom.ToString())
 				{
+					Debug.Log("IN");
 					// PLUS
 					if (articleRandom > 0)
 					{
-						_Event.GetComponentInChildren<Text>().text = node.SelectSingleNode("Increase").InnerText;
+						Debug.Log("PLUS");
+						_Event.GetComponent<EventInformation>()._Index = indexRandom;
+						_Event.GetComponent<EventInformation>()._Described = node.SelectSingleNode("Increase").InnerText;
+						_Event.GetComponent<EventInformation>()._Article = articleRandom;
 					}
 
 					// MINUS
 					else
 					{
-						_Event.GetComponentInChildren<Text>().text = node.SelectSingleNode("Decrease").InnerText;
+						Debug.Log("OUT");
+						_Event.GetComponent<EventInformation>()._Index = indexRandom;
+						_Event.GetComponent<EventInformation>()._Described = node.SelectSingleNode("Decrease").InnerText;
+						_Event.GetComponent<EventInformation>()._Article = articleRandom;
 					}
 				}
 			}
-
-
-			// Apply to Resource Manager
-			this.GetComponent<ResourceControll.ResourceManager>().EventCheck(indexRandom, articleRandom);
 
 			// Set Parent
 			temp.transform.SetParent(_GameCanvas.transform);

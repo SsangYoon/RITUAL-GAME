@@ -142,12 +142,16 @@
     <Compile Include="Assets\ButtonMoveController.cs" />
     <Compile Include="Assets\CameraDayNightController.cs" />
     <Compile Include="Assets\ChangeSceneLerp.cs" />
+    <Compile Include="Assets\CountTextController.cs" />
     <Compile Include="Assets\DayManager.cs" />
     <Compile Include="Assets\DayViewer.cs" />
     <Compile Include="Assets\EventDescribedResponse.cs" />
+    <Compile Include="Assets\EventInformation.cs" />
     <Compile Include="Assets\EventManager.cs" />
     <Compile Include="Assets\ExitApplication.cs" />
     <Compile Include="Assets\GameMusicControll.cs" />
+    <Compile Include="Assets\GameOverManagement.cs" />
+    <Compile Include="Assets\GameOverTextController.cs" />
     <Compile Include="Assets\NotDestroyOnLoad.cs" />
     <Compile Include="Assets\ResourceCountController.cs" />
     <Compile Include="Assets\ResourceManager.cs" />
