@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+
 using System.Collections;
 
 using SacrificeContoll;
@@ -13,12 +15,18 @@ namespace ResourceControll
 
 		private ResourceManager _ResourceManager;
 
+		private DayControll.DayManager _DayManager;
+
+		private bool _NightCheck = false;
+
 		private void Awake()
 		{
 			// Get Component
 			_SacrificeManager = GameObject.FindGameObjectWithTag("DataManager").GetComponent<SacrificeManager>();
 
 			_ResourceManager = GameObject.FindGameObjectWithTag("DataManager").GetComponent<ResourceManager>();
+
+			_DayManager = GameObject.FindGameObjectWithTag("DataManager").GetComponent<DayControll.DayManager>();
 		}
 
 		public void SpawnButtonResponse()
@@ -27,11 +35,15 @@ namespace ResourceControll
 			if (_SacrificeManager._SacrifceList.Count >= 5.0f)
 				return;
 
+
+			// Check
 			foreach (string str in _SacrificeManager._SacrifceList)
 			{
-				if (str == _Index.ToString.ToString())
+				if (str == _Index.ToString())
 				{
-
+					Debug.Log("Disable Chek");
+					// Disable
+					return;
 				}
 			}
 
@@ -67,13 +79,30 @@ namespace ResourceControll
 					_ResourceManager._Octopus--;
 					break;
 			}
+
+			this.GetComponent<Image>().color = new Color(100.0f / 255.0f, 100.0f / 255.0f, 100.0f / 255.0f, 1.0f);
+
 			_SacrificeManager._SacrifceList.Add(_Index.ToString());
 		}
 
 		// Disable Button
 		public void Update()
 		{
-
+			if (_NightCheck == false)
+			{
+				if (_DayManager._isDay == false)
+				{
+					_NightCheck = true;
+					this.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+				}
+			}
+			else
+			{
+				if (_DayManager._isDay == true)
+				{
+					_NightCheck = false;
+				}
+			}
 		}
 	}
 }
