@@ -8,7 +8,7 @@ namespace SacrificeContoll
 {
 	public class SacrificeManager : MonoBehaviour
 	{
-		public 
+		
 	}
 }
 
