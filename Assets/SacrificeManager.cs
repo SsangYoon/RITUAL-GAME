@@ -8,7 +8,14 @@ namespace SacrificeContoll
 {
 	public class SacrificeManager : MonoBehaviour
 	{
-		public 
+		public List<string> _SacrifceList;
+
+		public void SpawnFreindly()
+		{
+
+			// Reset
+			_SacrifceList.Clear();
+		}
 	}
 }
 
