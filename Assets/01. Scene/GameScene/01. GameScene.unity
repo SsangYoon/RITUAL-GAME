@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48034f45a0c68e4e9cf51b2199d604b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _SacrifceList: []
 --- !u!1 &1064413663 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 149676, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
@@ -515,6 +516,30 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 337136813}
+    - target: {fileID: 11412394, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11443162, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454916, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11459822, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11495908, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415884, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
   m_IsPrefabParent: 0
