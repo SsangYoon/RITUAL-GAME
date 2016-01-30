@@ -10,7 +10,7 @@ namespace DayControll
 		// Use this for initialization
 		private void Awake () 
 		{
-			_isDay = true;
+			_isDay = false;
 		}
 	}
 }

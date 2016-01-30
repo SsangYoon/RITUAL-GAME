@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 443282}
   - 114: {fileID: 11402742}
+  - 61: {fileID: 6168600}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -86,6 +87,20 @@ Transform:
   - {fileID: 412912}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6168600
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166692}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 8689a95e3f03d314fa8f272e3ccecea3, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 7.2104073, y: -3.1273074}
+  serializedVersion: 2
+  m_Size: {x: 32.714687, y: 2.815856}
 --- !u!114 &11402742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da571253451e8ac46b2c17f53d8cb63f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Speed: 10
+  _Speed: 5
   _Day: {fileID: 21285862}
   _Night: {fileID: 21223628}
 --- !u!212 &21223628

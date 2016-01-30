@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     {
         while(true) 
         {
-            yield return new WaitForSeconds(5.0f);
+            yield return new WaitForSeconds(Random.Range(3, 6));
 
             enemyList.Add(Instantiate(enemy, new Vector3(15, 5, 0), new Quaternion(0, 0, 0, 1)) as GameObject);
         }
