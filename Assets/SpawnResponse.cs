@@ -1,14 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+using SacrificeContoll;
+
 namespace ResourceControll
 {
 	public class SpawnResponse : MonoBehaviour
 	{
 		public int _Index;
 
-		// Use this for initialization
-		private void Start()
+		private SacrificeManager _SacrificeManager;
+
+		private void Awake()
+		{
+			// Get Component
+			_SacrificeManager = GameObject.FindGameObjectWithTag("DataManager").GetComponent<SacrificeManager>();
+		}
+
+		public void SpawnButtonResponse()
 		{
 
 		}
