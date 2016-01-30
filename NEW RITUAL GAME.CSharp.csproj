@@ -142,6 +142,7 @@
     <Compile Include="Assets\ButtonMoveController.cs" />
     <Compile Include="Assets\ChangeSceneLerp.cs" />
     <Compile Include="Assets\DayManager.cs" />
+    <Compile Include="Assets\DayViewer.cs" />
     <Compile Include="Assets\EventDescribedResponse.cs" />
     <Compile Include="Assets\EventManager.cs" />
     <Compile Include="Assets\ExitApplication.cs" />

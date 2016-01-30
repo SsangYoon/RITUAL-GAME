@@ -23,8 +23,17 @@ namespace ResourceControll
 
 		public void SpawnButtonResponse()
 		{
+			// Check
 			if (_SacrificeManager._SacrifceList.Count >= 5.0f)
 				return;
+
+			foreach (string str in _SacrificeManager._SacrifceList)
+			{
+				if (str == _Index.ToString.ToString())
+				{
+
+				}
+			}
 
 			switch (_Index)
 			{
@@ -59,6 +68,12 @@ namespace ResourceControll
 					break;
 			}
 			_SacrificeManager._SacrifceList.Add(_Index.ToString());
+		}
+
+		// Disable Button
+		public void Update()
+		{
+
 		}
 	}
 }

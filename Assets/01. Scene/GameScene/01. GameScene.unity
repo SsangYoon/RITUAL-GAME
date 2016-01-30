@@ -516,33 +516,32 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 337136813}
-    - target: {fileID: 11412394, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
+    - target: {fileID: 22435266, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11443162, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11454916, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11459822, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11495908, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11415884, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+    - target: {fileID: 22469174, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
+      propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1605856345 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 108402, guid: 77ef0a5b38134e145a482c1201783495, type: 2}
+  m_PrefabInternal: {fileID: 1605856344}
+--- !u!114 &1605856346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1605856345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9122f6344307a41a13991dee3c64c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1792389975
 Prefab:
   m_ObjectHideFlags: 0
