@@ -10,10 +10,11 @@ GameObject:
   - 4: {fileID: 479634}
   - 212: {fileID: 21245054}
   - 50: {fileID: 5004762}
-  - 61: {fileID: 6164858}
   - 114: {fileID: 11408548}
   - 114: {fileID: 11437402}
-  m_Layer: 0
+  - 60: {fileID: 6094710}
+  - 95: {fileID: 9595576}
+  m_Layer: 8
   m_Name: enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,28 +42,49 @@ Rigidbody2D:
   m_GameObject: {fileID: 132622}
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 3
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &6164858
-BoxCollider2D:
+  m_Constraints: 4
+--- !u!60 &6094710
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132622}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8689a95e3f03d314fa8f272e3ccecea3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.95}
+  m_Points:
+    m_Paths:
+    - - {x: -0.39999998, y: 0.45}
+      - {x: -0.39999998, y: -0.45}
+      - {x: 0.39999998, y: -0.45}
+      - {x: 0.39999998, y: 0.45}
+--- !u!95 &9595576
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132622}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a93e70478c7ee4b46b58a13da9f51bac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11408548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -74,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e7f87ebfc0c46b458724a5596c571e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!114 &11437402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,6 +150,34 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: e6fe077e82c4476409ffd9bb81957575,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LinearDrag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 8689a95e3f03d314fa8f272e3ccecea3, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 132622}

@@ -2,8 +2,9 @@
 using System.Collections;
 
 public class EnemyAction : MonoBehaviour {
+    [SerializeField]
     private float speed;
-    private CharState state;
+    public CharState state { get; set; }
     private Transform target;
 
     private float attackOld;
@@ -11,12 +12,12 @@ public class EnemyAction : MonoBehaviour {
 
     private GameManager gameManager;
 
-    public void Awake()
+    public void Start()
     {
         state = CharState.Move;
-        speed = 7f;
+        speed = 1f;
 
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
 
         StartCoroutine(CheckState());
     }
@@ -37,46 +38,27 @@ public class EnemyAction : MonoBehaviour {
                 case CharState.Idle:
                     break;
                 case CharState.Move:
-                    GetComponent<Rigidbody2D>().AddForce(new Vector3(-1, 0, 0) * speed);
-                    if(gameManager.friendlyList.Count > 0)
-                    {
-                        foreach (GameObject obj in gameManager.friendlyList)
-                        {
-                            if (obj.transform.position.x - transform.position.x <= 50)
-                            {
-                                target = obj.transform;
-                                state = CharState.Fight;
-                            }
-                        }
-                    }
+                    GetComponent<Rigidbody2D>().velocity -= new Vector2(speed * Time.deltaTime, 0);
                     break;
                 case CharState.Die:
                     DestroyObject(gameObject);
                     break;
-                case CharState.Fight:
-                    if (now - attackOld <= 0.5)
-                    {
-                        attackOld = Time.time;
-                        state = CharState.Attack;
-                    }
-                    if ((target.position.x - transform.position.x) > 50)
-                    {
-                        state = CharState.Move;
-                    }
-                    break;
-                case CharState.Attack:
+                case CharState.Hit:
+                    GetComponent<Rigidbody2D>().AddForce(new Vector2(0.5f, 0.5f) * 200);
+                    state = CharState.Move;
                     break;
             }
         }
     }
-    public void OnTriggerEnter(Collider col)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        if (state == CharState.Attack)
-        {
-            if (col.gameObject.name == "Friendly")
-            {
-                col.gameObject.GetComponent<Friendly>().hp -= gameObject.GetComponent<Enemy>().ap;
-            }
+        if (col.gameObject.name == "friendly")
+         {
+            col.gameObject.GetComponent<Friendly>().hp -= gameObject.GetComponent<Enemy>().ap;
+            col.gameObject.GetComponent<FriendlyAction>().state = CharState.Hit;
+            GetComponent<Enemy>().hp -= col.gameObject.GetComponent<Friendly>().ap;
+            GetComponent<EnemyAction>().state = CharState.Hit;
+
         }
     }
 }

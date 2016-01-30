@@ -7,8 +7,6 @@ public enum CharState
 {
     Idle,
     Move,
-    Fight,
-    Attack,
     Hit,
     Die,
 }
