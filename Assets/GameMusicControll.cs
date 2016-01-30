@@ -52,11 +52,14 @@ public class GameMusicControll : MonoBehaviour {
 			if (_isDay)
 			{
 				_AudioSource.clip = _DayMusic;
+				_AudioSource.volume = 1.0f;
+
 				_AudioSource.Play();
 			}
 			else
 			{
 				_AudioSource.clip = _NightMusic;
+				_AudioSource.volume = 0.5f;
 				_AudioSource.Play();
 			}
 
