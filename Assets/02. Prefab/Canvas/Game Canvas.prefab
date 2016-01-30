@@ -346,7 +346,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22490112}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!114 &11407862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -440,7 +440,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11446488}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11432256}
+        m_MethodName: SpawnButtonResponse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &11414530
@@ -505,7 +516,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &11416534
@@ -612,7 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14702df817962c54ca466ddb26c06901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Index: 0
+  _Index: 1
 --- !u!114 &11434762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -651,7 +662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14702df817962c54ca466ddb26c06901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Index: 0
+  _Index: 2
 --- !u!114 &11436676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -721,7 +732,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11407862}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11436234}
+        m_MethodName: SpawnButtonResponse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &11446488
@@ -815,7 +837,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11434762}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11490084}
+        m_MethodName: SpawnButtonResponse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &11459822
@@ -856,7 +889,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11462118}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11476846}
+        m_MethodName: SpawnButtonResponse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &11460400
@@ -975,7 +1019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14702df817962c54ca466ddb26c06901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Index: 0
+  _Index: 5
 --- !u!114 &11470280
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1035,7 +1079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14702df817962c54ca466ddb26c06901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Index: 0
+  _Index: 3
 --- !u!114 &11477538
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1143,7 +1187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14702df817962c54ca466ddb26c06901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Index: 0
+  _Index: 4
 --- !u!114 &11494408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1194,7 +1238,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11470300}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11465652}
+        m_MethodName: SpawnButtonResponse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &11499014
@@ -1428,7 +1483,7 @@ RectTransform:
   m_Children:
   - {fileID: 22405864}
   m_Father: {fileID: 22490112}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 736.9, y: 60.00004}
@@ -1591,8 +1646,8 @@ RectTransform:
   - {fileID: 22467264}
   - {fileID: 22450226}
   - {fileID: 22424798}
-  - {fileID: 480736}
   - {fileID: 22447002}
+  - {fileID: 480736}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
