@@ -30,8 +30,6 @@ namespace Vignette
 		// Update is called once per frame
 		private void Update()
 		{
-			Debug.Log(_DayManager);
-
 			_isDay = _DayManager._isDay;
 
 			UpdateVignette();
@@ -49,8 +47,6 @@ namespace Vignette
 		// ON
 		private void TurnOnVignette()
 		{
-			Debug.Log("ON");
-
 			float intensity = this.GetComponent<VignetteAndChromaticAberration>().intensity;
 
 			this.GetComponent<VignetteAndChromaticAberration>().intensity = Mathf.Lerp(intensity, _MaximumIntensity, _Speed * Time.deltaTime);
@@ -59,8 +55,6 @@ namespace Vignette
 		// OFF
 		private void TurnOffVignette()
 		{
-			Debug.Log("OFF");
-
 			float intensity = this.GetComponent<VignetteAndChromaticAberration>().intensity;
 
 			this.GetComponent<VignetteAndChromaticAberration>().intensity = Mathf.Lerp(intensity, 0.0f, _Speed * Time.deltaTime);

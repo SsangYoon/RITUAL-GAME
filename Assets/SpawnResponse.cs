@@ -1,15 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SpawnResponse : MonoBehaviour {
+namespace ResourceControll
+{
+	public class SpawnResponse : MonoBehaviour
+	{
+		public int _Index;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+		// Use this for initialization
+		private void Start()
+		{
+
+		}
+
+		// Update is called once per frame
+		private void Update()
+		{
+
+		}
 	}
 }

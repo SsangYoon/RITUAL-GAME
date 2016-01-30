@@ -193,6 +193,8 @@
     <None Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
     <None Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
     <None Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+    <None Include="Assets\Resources\XML\EventText.xml" />
+    <None Include="Assets\Resources\XML\SummonText.xml" />
     <None Include="Assets\Resources\XML\character.xml" />
     <None Include="Assets\Resources\XML\enemy.xml" />
     <None Include="Assets\Resources\XML\sacrifice.xml" />

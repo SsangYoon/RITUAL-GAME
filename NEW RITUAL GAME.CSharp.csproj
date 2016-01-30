@@ -137,11 +137,18 @@
     <Compile Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water\Scripts\WaterBase.cs" />
     <Compile Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water\Scripts\WaterTile.cs" />
     <Compile Include="Assets\BackgroundController.cs" />
+    <Compile Include="Assets\BattleResponse.cs" />
     <Compile Include="Assets\ButtonMoveController.cs" />
     <Compile Include="Assets\ChangeSceneLerp.cs" />
     <Compile Include="Assets\DayManager.cs" />
+    <Compile Include="Assets\EventDescribedResponse.cs" />
+    <Compile Include="Assets\EventManager.cs" />
     <Compile Include="Assets\ExitApplication.cs" />
     <Compile Include="Assets\NotDestroyOnLoad.cs" />
+    <Compile Include="Assets\ResourceCountController.cs" />
+    <Compile Include="Assets\ResourceManager.cs" />
+    <Compile Include="Assets\SacrificeManager.cs" />
+    <Compile Include="Assets\SizeControllLerp.cs" />
     <Compile Include="Assets\SpawnResponse.cs" />
     <Compile Include="Assets\VignetteController.cs" />
   </ItemGroup>
@@ -217,6 +224,8 @@
     <None Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
     <None Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
     <None Include="Assets\03. Scripts\Shader Scripts\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+    <None Include="Assets\Resources\XML\EventText.xml" />
+    <None Include="Assets\Resources\XML\SummonText.xml" />
     <None Include="Assets\Resources\XML\character.xml" />
     <None Include="Assets\Resources\XML\enemy.xml" />
     <None Include="Assets\Resources\XML\sacrifice.xml" />

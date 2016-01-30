@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Described>
+		<ID>1</ID>
+		<Increase>길 잃은 떠돌이가 부족을 찾아왔습니다.</Increase>
+		<Decrease>탈주자가 발생했습니다.</Decrease>
+	</Described>
+	<Described>
+		<ID>2</ID>
+		<Increase>병아리가 닭으로 진화했습니다.</Increase>
+		<Decrease>조류 독감이 발생했습니다. 치킨값이 싸졌으면 좋겠습니다.</Decrease>
+	</Described>
+	<Described>
+		<ID>3</ID>
+		<Increase>농작물을 망치던 돼지를 포획했습니다.</Increase>
+		<Decrease>돼지 콜레라가 발생했습니다. </Decrease>
+	</Described>
+	<Described>
+		<ID>4</ID>
+		<Increase>소가 새끼를 낳았습니다.</Increase>
+		<Decrease>광우병으로 인해 소들이 미쳐날뛰고 있습니다.</Decrease>
+	</Described>
+	<Described>
+		<ID>5</ID>
+		<Increase>하늘에서 문어가 내려왔습니다.</Increase>
+		<Decrease>가뭄이 발생했습니다. 문어들이 살곳을 잃었습니다.</Decrease>
+	</Described>
+	<Described/>
+</Event>
