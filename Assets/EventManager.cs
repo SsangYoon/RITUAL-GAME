@@ -50,6 +50,8 @@ namespace Event
 			// Search
 			foreach (XmlNode node in _NodeList)
 			{
+				Debug.Log(_NodeList.Count);
+				Debug.Log(node.SelectSingleNode("ID").InnerText);
 				if (node.SelectSingleNode("ID").InnerText == indexRandom.ToString())
 				{
 					// PLUS

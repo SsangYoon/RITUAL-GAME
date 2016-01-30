@@ -37,5 +37,17 @@ namespace DayControll
 
 			_isDay = false;
 		}
+
+		private void Update()
+		{
+			if (Input.GetKeyUp(KeyCode.Q))
+			{
+				Day();
+			}
+			else if (Input.GetKeyUp(KeyCode.E))
+			{
+				Night();
+			}
+		}
 	}
 }

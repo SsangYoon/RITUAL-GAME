@@ -85,7 +85,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &211483578
+--- !u!1001 &566726902
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -164,18 +164,14 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11425982, guid: d9abe3b9dc891cc40a49fb1773b04495, type: 2}
-      propertyPath: _FadePlane
-      value: 
-      objectReference: {fileID: 888735351}
     - target: {fileID: 22379892, guid: d9abe3b9dc891cc40a49fb1773b04495, type: 2}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1299587094}
-    - target: {fileID: 11437272, guid: d9abe3b9dc891cc40a49fb1773b04495, type: 2}
-      propertyPath: m_Text
-      value: BACK
-      objectReference: {fileID: 0}
+    - target: {fileID: 11425982, guid: d9abe3b9dc891cc40a49fb1773b04495, type: 2}
+      propertyPath: _FadePlane
+      value: 
+      objectReference: {fileID: 888735351}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9abe3b9dc891cc40a49fb1773b04495, type: 2}
   m_IsPrefabParent: 0

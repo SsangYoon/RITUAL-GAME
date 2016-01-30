@@ -25,8 +25,6 @@ namespace BackgroundControll
 			// Get Component
 			_DayManager = GameObject.FindGameObjectWithTag("DataManager").GetComponent<DayManager>();
 
-
-
 			// Get Property
 			_isDay = _DayManager._isDay;
 		}
