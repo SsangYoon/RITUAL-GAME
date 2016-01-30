@@ -13,6 +13,12 @@ namespace SacrificeContoll
 		public void SpawnFreindly()
 		{
 
+	
+			Reset();	
+		}
+
+		public void Reset()
+		{
 			// Reset
 			_SacrifceList.Clear();
 		}

@@ -134,8 +134,10 @@
     <Compile Include="Assets\BackgroundController.cs" />
     <Compile Include="Assets\BattleResponse.cs" />
     <Compile Include="Assets\ButtonMoveController.cs" />
+    <Compile Include="Assets\CameraDayNightController.cs" />
     <Compile Include="Assets\ChangeSceneLerp.cs" />
     <Compile Include="Assets\DayManager.cs" />
+    <Compile Include="Assets\DayViewer.cs" />
     <Compile Include="Assets\EventDescribedResponse.cs" />
     <Compile Include="Assets\EventManager.cs" />
     <Compile Include="Assets\ExitApplication.cs" />

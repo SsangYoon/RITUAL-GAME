@@ -43,7 +43,7 @@ namespace ResourceControll
 					break;
 
 				case (int)ResourceIndex.OCTOPUS:
-					_Text.text = _ResourceManager._Human.ToString();
+					_Text.text = _ResourceManager._Octopus.ToString();
 					break;
 			}
 		}

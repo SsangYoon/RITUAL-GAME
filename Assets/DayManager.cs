@@ -2,6 +2,7 @@
 using System.Collections;
 
 using Event;
+using SacrificeContoll;
 
 namespace DayControll
 {
@@ -9,12 +10,15 @@ namespace DayControll
 
 		public bool _isDay;
 
-		private int _PassedDay = 1;
+		public int _PassedDay = 1;
 
+		private SacrificeManager _SacrificeManager;
+		
 		// Use this for initialization
 		private void Awake () 
 		{
 			_isDay = true;
+			_SacrificeManager = this.GetComponent<SacrificeManager>();
 		}
 
 		public void Day()
@@ -24,14 +28,14 @@ namespace DayControll
 				this.GetComponent<EventManager>().EventSpawn();
 				_PassedDay++;
 			}
-				
 			_isDay = true;
 		}
 
 		public void Night()
 		{
+			_SacrificeManager.Reset();
+
 			_isDay = false;
 		}
-	
 	}
 }
