@@ -11,6 +11,7 @@ GameObject:
   - 114: {fileID: 11424010}
   - 114: {fileID: 11437310}
   - 114: {fileID: 11498164}
+  - 114: {fileID: 11425476}
   m_Layer: 0
   m_Name: _DataManager
   m_TagString: DataManager
@@ -42,6 +43,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isDay: 0
+  _PassedDay: 1
+--- !u!114 &11425476
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f48034f45a0c68e4e9cf51b2199d604b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _SacrifceList: 
+  spawnFriendly: {fileID: 0}
+  _SpawnComponents:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &11437310
 MonoBehaviour:
   m_ObjectHideFlags: 1

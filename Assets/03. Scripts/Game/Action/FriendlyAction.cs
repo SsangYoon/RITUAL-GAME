@@ -40,18 +40,14 @@ public class FriendlyAction : MonoBehaviour {
             switch (state)
             {
                 case CharState.Idle:
-                    Debug.Log("Im Idle");
                     break;
                 case CharState.Move:
-                    Debug.Log("Im Move");
                     GetComponent<Rigidbody2D>().velocity += new Vector2(speed * Time.deltaTime, 0);
                     break;
                 case CharState.Die:
-                    Debug.Log("Im Die");
                     DestroyObject(gameObject);
                     break;
                 case CharState.Hit:
-                    Debug.Log("Im Hit");
                     GetComponent<Rigidbody2D>().AddForce(new Vector2(-0.5f, 0.5f) * 300);
                     state = CharState.Move;
                     break;

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - DataManager
+  - SpawnButton
   layers:
   - Default
   - TransparentFX

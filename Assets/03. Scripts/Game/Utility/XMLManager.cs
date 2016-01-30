@@ -27,7 +27,7 @@ public class XMLManager
         string directory = "XML/" + fileName;
         string targetnode = dataset + "/" + sheet;
 
-        TextAsset textAsset = Resources.Load(fileName) as TextAsset;
+        TextAsset textAsset = Resources.Load(directory) as TextAsset;
         XmlDocument xmldoc = new XmlDocument();
         xmldoc.LoadXml(textAsset.text);
         
@@ -57,36 +57,41 @@ public class XMLManager
         }
         return null;
     }
-    public CharacterInfo Load_CharacterData(int Sac2, int Sac3, int Sac4, int Sac5)
+    public CharacterInfo Load_CharacterData(int Sac1, int Sac2, int Sac3, int Sac4, int Sac5)
     {
         CharacterInfo temp = new CharacterInfo();
 
         foreach (XmlNode node in characterTable)
         {
-            if(int.Parse(node.SelectSingleNode("Sac2").InnerText) == Sac2)
+            if(int.Parse(node.SelectSingleNode("Sac1").InnerText) == Sac1)
             {
-                if(int.Parse(node.SelectSingleNode("Sac3").InnerText) == Sac3)
+                if (int.Parse(node.SelectSingleNode("Sac2").InnerText) == Sac2)
                 {
-                    if(int.Parse(node.SelectSingleNode("Sac4").InnerText) == Sac4)
+                    if (int.Parse(node.SelectSingleNode("Sac3").InnerText) == Sac3)
                     {
-                        if(int.Parse(node.SelectSingleNode("Sac5").InnerText) == Sac5)
+                        if (int.Parse(node.SelectSingleNode("Sac4").InnerText) == Sac4)
                         {
-                            temp.ID = int.Parse(node.SelectSingleNode("ID").InnerText);
-                            temp.Name = node.SelectSingleNode("Name").InnerText;
-                            temp.HP = int.Parse(node.SelectSingleNode("HP").InnerText);
-                            temp.AP = int.Parse(node.SelectSingleNode("AP").InnerText);
-                            temp.Sac1 = int.Parse(node.SelectSingleNode("Sac1").InnerText);
-                            temp.Sac2 = int.Parse(node.SelectSingleNode("Sac2").InnerText);
-                            temp.Sac3 = int.Parse(node.SelectSingleNode("Sac3").InnerText);
-                            temp.Sac4 = int.Parse(node.SelectSingleNode("Sac4").InnerText);
-                            temp.Sac5 = int.Parse(node.SelectSingleNode("Sac5").InnerText);
+                            if (int.Parse(node.SelectSingleNode("Sac5").InnerText) == Sac5)
+                            {
 
-                            return temp;
+                                temp.ID = int.Parse(node.SelectSingleNode("ID").InnerText);
+                                temp.Name = node.SelectSingleNode("Name").InnerText;
+                                temp.HP = int.Parse(node.SelectSingleNode("HP").InnerText);
+                                temp.AP = int.Parse(node.SelectSingleNode("AP").InnerText);
+                                temp.Sac1 = int.Parse(node.SelectSingleNode("Sac1").InnerText);
+                                temp.Sac2 = int.Parse(node.SelectSingleNode("Sac2").InnerText);
+                                temp.Sac3 = int.Parse(node.SelectSingleNode("Sac3").InnerText);
+                                temp.Sac4 = int.Parse(node.SelectSingleNode("Sac4").InnerText);
+                                temp.Sac5 = int.Parse(node.SelectSingleNode("Sac5").InnerText);
+
+                                return temp;
+                            }
                         }
+
                     }
-                        
                 }
             }
+            
         }
         return null;
     }

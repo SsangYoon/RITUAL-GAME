@@ -25,17 +25,7 @@ namespace ButtonMoveControll
 		{
 			// Get Component
 			_DayManager = GameObject.FindGameObjectWithTag("DataManager").GetComponent<DayManager>();
-
-<<<<<<< HEAD
-			// Get Property
-			_GotoPosition = _MoveToObject.transform.position;
-            Debug.Log(_GotoPosition);
-
-			// Get Property
-			_ReturningPosition = this.transform.position;
-=======
->>>>>>> 254c2d13d17609a48d26aaaade058fe5b4747bed
-		}
+   		}
 
 		// Update is called once per frame
 		private void Update()

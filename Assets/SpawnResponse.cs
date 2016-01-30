@@ -11,6 +11,8 @@ namespace ResourceControll
 	{
 		public int _Index;
 
+        public bool _Enabled = true;
+
 		private SacrificeManager _SacrificeManager;
 
 		private ResourceManager _ResourceManager;
@@ -31,21 +33,17 @@ namespace ResourceControll
 
 		public void SpawnButtonResponse()
 		{
-<<<<<<< HEAD
-			if (_SacrificeManager._SacrifceList.Count >= 5)
-=======
-			// Check
-			if (_SacrificeManager._SacrifceList.Count >= 5.0f)
->>>>>>> 254c2d13d17609a48d26aaaade058fe5b4747bed
-				return;
+            if(_SacrificeManager._SacrifceList.Count >= 5)
+                return;
 
+            if (_Enabled == false)
+                return;
 
 			// Check
-			foreach (string str in _SacrificeManager._SacrifceList)
+			foreach (int str in _SacrificeManager._SacrifceList)
 			{
-				if (str == _Index.ToString())
+				if (str == _Index)
 				{
-					Debug.Log("Disable Chek");
 					// Disable
 					return;
 				}
@@ -84,20 +82,23 @@ namespace ResourceControll
 					break;
 			}
 
+            _Enabled = false;
 			this.GetComponent<Image>().color = new Color(100.0f / 255.0f, 100.0f / 255.0f, 100.0f / 255.0f, 1.0f);
 
-			_SacrificeManager._SacrifceList.Add(_Index.ToString());
+			_SacrificeManager._SacrifceList.Add(_Index);
 		}
 
 		// Disable Button
 		public void Update()
-		{
-			if (_NightCheck == false)
+        { 
+            if (_NightCheck == false)
 			{
 				if (_DayManager._isDay == false)
 				{
 					_NightCheck = true;
-					this.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+                    _Enabled = true;
+
+                    this.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
 				}
 			}
 			else
@@ -107,6 +108,8 @@ namespace ResourceControll
 					_NightCheck = false;
 				}
 			}
-		}
-	}
+            if (_Enabled)
+                this.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+        }
+    }
 }
