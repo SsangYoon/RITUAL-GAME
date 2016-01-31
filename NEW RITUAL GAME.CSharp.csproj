@@ -158,7 +158,9 @@
     <Compile Include="Assets\SacrificeManager.cs" />
     <Compile Include="Assets\SizeControllLerp.cs" />
     <Compile Include="Assets\SpawnResponse.cs" />
+    <Compile Include="Assets\SummonGuideController.cs" />
     <Compile Include="Assets\VignetteController.cs" />
+    <Compile Include="Assets\WaveMoveY.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\03. Scripts\Shader Scripts\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
