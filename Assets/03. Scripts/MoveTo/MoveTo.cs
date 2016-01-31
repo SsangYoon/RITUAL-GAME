@@ -48,7 +48,7 @@ namespace MoveTo
 				Vector3 direction = _ChasedObject.transform.position - this.transform.position;
 				direction.Normalize();
 				
-				this.transform.position += direction * _Speed * _DelayTime;
+				this.transform.position += direction * _Speed * Time.deltaTime;
 			}
 			_CompleteAction = false;
 			return false;	// Not Yet

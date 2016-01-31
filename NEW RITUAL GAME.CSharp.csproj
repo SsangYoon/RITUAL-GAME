@@ -76,6 +76,7 @@
     <Compile Include="Assets\03. Scripts\Fade\NextSceneWithFadeInLerp.cs" />
     <Compile Include="Assets\03. Scripts\Game\Action\EnemyAction.cs" />
     <Compile Include="Assets\03. Scripts\Game\Action\FriendlyAction.cs" />
+    <Compile Include="Assets\03. Scripts\Game\EndCanvas.cs" />
     <Compile Include="Assets\03. Scripts\Game\Entity\Enemy.cs" />
     <Compile Include="Assets\03. Scripts\Game\Entity\Friendly.cs" />
     <Compile Include="Assets\03. Scripts\Game\Enum\Enum.cs" />
@@ -149,6 +150,7 @@
     <Compile Include="Assets\EventInformation.cs" />
     <Compile Include="Assets\EventManager.cs" />
     <Compile Include="Assets\ExitApplication.cs" />
+    <Compile Include="Assets\FireEffectGuide.cs" />
     <Compile Include="Assets\GameMusicControll.cs" />
     <Compile Include="Assets\GameOverManagement.cs" />
     <Compile Include="Assets\GameOverTextController.cs" />
@@ -158,7 +160,9 @@
     <Compile Include="Assets\SacrificeManager.cs" />
     <Compile Include="Assets\SizeControllLerp.cs" />
     <Compile Include="Assets\SpawnResponse.cs" />
+    <Compile Include="Assets\SummonGuideController.cs" />
     <Compile Include="Assets\VignetteController.cs" />
+    <Compile Include="Assets\WaveMoveY.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\03. Scripts\Shader Scripts\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />

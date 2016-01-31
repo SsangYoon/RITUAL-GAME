@@ -234,6 +234,15 @@ Prefab:
       propertyPath: m_Name
       value: Day Count
       objectReference: {fileID: 0}
+    - target: {fileID: 11497758, guid: b26c0c897c8c00646b0e482411232ab8, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d270e7759163ffa478447c2c1fc1250c,
+        type: 3}
+    - target: {fileID: 22480422, guid: b26c0c897c8c00646b0e482411232ab8, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -185.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b26c0c897c8c00646b0e482411232ab8, type: 2}
   m_IsPrefabParent: 0
@@ -344,6 +353,10 @@ Prefab:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 153218, guid: dd07de1110773c548966a5078d25b79d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd07de1110773c548966a5078d25b79d, type: 2}
   m_IsPrefabParent: 0
@@ -451,7 +464,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11484182, guid: dd07de1110773c548966a5078d25b79d, type: 2}
       propertyPath: _Delaytime
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd07de1110773c548966a5078d25b79d, type: 2}

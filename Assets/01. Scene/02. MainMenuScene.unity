@@ -799,7 +799,7 @@ Transform:
   m_LocalScale: {x: 1.4243128, y: 1.4243132, z: 1.4243132}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1 &909732625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,22 +1304,6 @@ Prefab:
       propertyPath: _FadePlane
       value: 
       objectReference: {fileID: 909732625}
-    - target: {fileID: 22400274, guid: b5ca12cc3b7852b42bee22216c357d06, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22416850, guid: b5ca12cc3b7852b42bee22216c357d06, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 22488108, guid: b5ca12cc3b7852b42bee22216c357d06, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 179892, guid: b5ca12cc3b7852b42bee22216c357d06, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5ca12cc3b7852b42bee22216c357d06, type: 2}
   m_IsPrefabParent: 0
