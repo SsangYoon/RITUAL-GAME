@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -167,9 +167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2be9b05ef9afa6c448877a83c7d385b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Index: 1
-  _Article: -2
-  _Described: "\uD0C8\uC8FC\uC790\uAC00 \uBC1C\uC0DD\uD588\uC2B5\uB2C8\uB2E4."
+  _Index: 5
+  _Article: 5
+  _Described: "\uD558\uB298\uC5D0\uC11C \uBB38\uC5B4\uAC00 \uB0B4\uB824\uC654\uC2B5\uB2C8\uB2E4."
   _Speed: 8
 --- !u!114 &11457682
 MonoBehaviour:
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

@@ -43,10 +43,12 @@ namespace Event
 
 
 			// SETTING
-
 			_Icon.sprite = Resources.Load<Sprite>("Sprites/Icon/" + _Index.ToString());
 
-			_CountText.text = ": " + _Article.ToString();
+			if(_Article > 0)
+				_CountText.text = ": " + "+ " + _Article.ToString();
+			else
+				_CountText.text = ": " + _Article.ToString();
 
 			_DescribedText.text = _Described;
 
