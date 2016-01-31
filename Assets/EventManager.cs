@@ -53,10 +53,8 @@ namespace Event
 			// Search
 			foreach (XmlNode node in _NodeList)
 			{
-				Debug.Log("OUT");
 				if (node.SelectSingleNode("ID").InnerText == indexRandom.ToString())
 				{
-					Debug.Log("IN");
 					// PLUS
 					if (articleRandom > 0)
 					{

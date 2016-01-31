@@ -318,7 +318,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1614245849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,6 +456,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 21285862, guid: 2a055525db5a97f4b948e1e95d866d8c, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 80cc4811798b30144b2ec05eca7b1097,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a055525db5a97f4b948e1e95d866d8c, type: 2}
   m_IsPrefabParent: 0
