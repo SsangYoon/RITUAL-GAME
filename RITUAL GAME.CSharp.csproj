@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\03. Scripts\EnemyNumText.cs" />
     <Compile Include="Assets\03. Scripts\Fade\FadeIn.cs" />
     <Compile Include="Assets\03. Scripts\Fade\FadeInLerp.cs" />
     <Compile Include="Assets\03. Scripts\Fade\FadeOut.cs" />
@@ -153,6 +154,7 @@
     <Compile Include="Assets\SacrificeManager.cs" />
     <Compile Include="Assets\SizeControllLerp.cs" />
     <Compile Include="Assets\SpawnResponse.cs" />
+    <Compile Include="Assets\SummonText.cs" />
     <Compile Include="Assets\VignetteController.cs" />
   </ItemGroup>
   <ItemGroup>

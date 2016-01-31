@@ -3,13 +3,16 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour {
 
-    public float hp { get; set; }
-    public float ap { get; set; }
+
+    [SerializeField]
+    private float _hp;
+    public float hp { get { return _hp; } set { _hp = value; } }
+    [SerializeField]
+    private float _ap;
+    public float ap { get { return _ap; } set { _ap = value; } }
 
 
     public void Awake()
     {
-        hp = 10;
-        ap = 1;
     }
 }

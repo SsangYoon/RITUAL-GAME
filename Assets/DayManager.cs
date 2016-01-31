@@ -21,6 +21,7 @@ namespace DayControll
 			_isDay = true;
 			_SacrificeManager = this.GetComponent<SacrificeManager>();
             gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
+            
 		}
 
 		public void Day()
@@ -37,6 +38,7 @@ namespace DayControll
                         DestroyObject(gameManager.friendlyList[i].gameObject);
                     }
                 }
+                gameManager.friendlyList.Clear();
 			}
 			_isDay = true;
 		}
@@ -46,7 +48,13 @@ namespace DayControll
 			_SacrificeManager.Reset();
 
 			_isDay = false;
-		}
+
+            for (int i = 0; i < gameManager.friendlyList.Count; i++)
+            {
+                gameManager.friendlyList[i].GetComponent<FriendlyAction>().state = CharState.Move;
+            }
+
+        }
 
 		private void Update()
 		{

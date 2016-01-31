@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class FriendlyAction : MonoBehaviour {
     [SerializeField]
@@ -13,14 +14,18 @@ public class FriendlyAction : MonoBehaviour {
 
     private GameManager gameManager;
 
-    public void Start()
+    [SerializeField]
+    private List<AudioClip> hitsound;
+
+    AudioSource audioplayer;
+
+    public void Awake()
     {
         state = CharState.Idle;
-        speed = 1.5f;
+        speed = 3f;
         alpha = 1;
 
-        gameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
-        gameManager.friendlyList.Add(this.gameObject);
+        audioplayer = GetComponent<AudioSource>();
 
         StartCoroutine(CheckState());
     }
@@ -34,14 +39,9 @@ public class FriendlyAction : MonoBehaviour {
         while(true)
         {
             yield return new WaitForSeconds(0.02f);
+            
 
-            if (GetComponent<Friendly>().hp <= 0)
-                state = CharState.Die;
-
-            if(gameManager.gameState == GameState.Night)
-            {
-                state = CharState.Move;
-            }
+            
 
             switch (state)
             {
@@ -51,9 +51,9 @@ public class FriendlyAction : MonoBehaviour {
                     GetComponent<Rigidbody2D>().velocity += new Vector2(speed * Time.deltaTime, 0);
                     break;
                 case CharState.Die:
-                    if(GetComponent<SpriteRenderer>().color.a > 0)
+                    if (GetComponent<SpriteRenderer>().color.a > 0)
                     {
-                        GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, alpha-=0.1f);
+                        GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, alpha -= 0.1f);
                     }
                     else
                     {
@@ -64,13 +64,14 @@ public class FriendlyAction : MonoBehaviour {
                 case CharState.Hit:
                     GetComponent<Rigidbody2D>().AddForce(new Vector2(-0.5f, 0.5f) * 200);
                     state = CharState.Move;
-                    if (GetComponent<Enemy>().hp <= 0)
+                    if (GetComponent<Friendly>().hp <= 0)
                         state = CharState.Die;
+                    
                     break;
             }
         }
     }
-    void OnCollisionEnter2D(Collision2D col)
+    void OnCollisionStay2D(Collision2D col)
     {
         if (col.gameObject.tag == "Enemy")
         {
@@ -81,6 +82,8 @@ public class FriendlyAction : MonoBehaviour {
                 col.gameObject.GetComponent<EnemyAction>().state = CharState.Hit;
                 gameObject.GetComponent<Friendly>().hp -= col.gameObject.GetComponent<Enemy>().ap;
                 state = CharState.Hit;
+                audioplayer.clip = hitsound[Random.Range(0, 3)];
+                audioplayer.Play();
             }
         }
     }

@@ -24,7 +24,6 @@ namespace BattleControll
 		// Button Response
 		public void BattleButtonResponse()
         {
-            sacrificeManager._SpawnList.Clear();
             // Set Night
             _DayManager.Night();
 		}

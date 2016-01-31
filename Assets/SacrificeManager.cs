@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,15 +11,18 @@ namespace SacrificeContoll
 	public class SacrificeManager : MonoBehaviour
 	{
 		public List<int> _SacrifceList;
-        public List<GameObject> _SpawnList;
         public GameObject spawnFriendly;
         public CharacterInfo spawnInfo;
+        [SerializeField] public Text text;
 
         public SpawnResponse[] _SpawnComponents;
+
+        public GameManager gameManager;
         
         public void Awake()
         {
             _SacrifceList = new List<int>();
+            gameManager = GameObject.FindObjectOfType<GameManager>().GetComponent<GameManager>();
            
         }
 
@@ -51,11 +55,15 @@ namespace SacrificeContoll
                 return;
             }
 
-            spawnFriendly = Instantiate(Resources.Load("Friendly/" + spawnInfo.ID), new Vector3(-_SpawnList.Count, 0, 0), new Quaternion(0, 0, 0, 1)) as GameObject;
-            _SpawnList.Add(spawnFriendly);
+            spawnFriendly = Instantiate(Resources.Load("Friendly/" + spawnInfo.ID), new Vector3(-3 - gameManager.friendlyList.Count, 0, -6), new Quaternion(0, 0, 0, 1)) as GameObject;
+            gameManager.friendlyList.Add(spawnFriendly);
 
             spawnFriendly.GetComponent<Friendly>().hp = spawnInfo.HP;
             spawnFriendly.GetComponent<Friendly>().ap = spawnInfo.AP;
+
+            text.GetComponent<SummonText>().Activate(spawnInfo.Name);
+
+            
                 
             Reset();	
 		}

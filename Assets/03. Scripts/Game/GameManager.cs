@@ -111,7 +111,7 @@ public class GameManager : MonoBehaviour
         while (true)
         {
             Debug.Log("Looping");
-            yield return new WaitForSeconds(Random.Range(3, 6));
+            yield return new WaitForSeconds(Random.Range(1.5f, 3));
             if (gameState == GameState.Night)
             {
                 if(spawnIndex < stageInfo.Sum)
@@ -121,7 +121,7 @@ public class GameManager : MonoBehaviour
                     {
                         Debug.Log("EnemyInfo NULL");
                     }
-                    enemy = Instantiate(Resources.Load("Enemy/" + temp.ID), new Vector3(14, 5, 0), new Quaternion(0, 0, 0, 1)) as GameObject;
+                    enemy = Instantiate(Resources.Load("Enemy/" + temp.ID), new Vector3(20, 5, 0), new Quaternion(0, 0, 0, 1)) as GameObject;
                     enemyList.Add(enemy);
 
                     enemy.GetComponent<Enemy>().hp = temp.HP;

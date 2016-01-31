@@ -61,20 +61,20 @@ public class EnemyAction : MonoBehaviour {
             }
         }
     }
-    void OnCollisionEnter2D(Collision2D col)
+    void OnCollisionStay2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Friendly")
-        {
-            if (col.gameObject.GetComponent<FriendlyAction>().state != CharState.Die
-              && state != CharState.Die)
-            {
-                col.gameObject.GetComponent<Friendly>().hp -= gameObject.GetComponent<Enemy>().ap;
-                col.gameObject.GetComponent<FriendlyAction>().state = CharState.Hit;
-                GetComponent<Enemy>().hp -= col.gameObject.GetComponent<Friendly>().ap;
-                GetComponent<EnemyAction>().state = CharState.Hit;
+        //if (col.gameObject.tag == "Friendly")
+        //{
+        //    if (col.gameObject.GetComponent<FriendlyAction>().state != CharState.Die
+        //      && state != CharState.Die)
+        //    {
+        //        col.gameObject.GetComponent<Friendly>().hp -= gameObject.GetComponent<Enemy>().ap;
+        //        col.gameObject.GetComponent<FriendlyAction>().state = CharState.Hit;
+        //        GetComponent<Enemy>().hp -= col.gameObject.GetComponent<Friendly>().ap;
+        //        GetComponent<EnemyAction>().state = CharState.Hit;
 
-            }
-        }
+        //    }
+        //}
            
     }
 }

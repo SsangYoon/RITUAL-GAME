@@ -13,6 +13,7 @@ public class XMLManager
     XmlNodeList characterTable;
     XmlNodeList enemyTable;
     XmlNodeList stageTable;
+    XmlNodeList summonTable;
 
     //DESC : 초기화
     public XMLManager()
@@ -20,6 +21,7 @@ public class XMLManager
         characterTable = LoadXml("Character", "NewDataSet", "Sheet1");
         enemyTable = LoadXml("Enemy", "NewDataSet", "Sheet1");
         stageTable = LoadXml("Stage", "NewDataSet", "Sheet1");
+        summonTable= LoadXml("SummonText", "NewDataSet", "Sheet1");
     }
 
     public XmlNodeList LoadXml(string fileName, string dataset, string sheet)
@@ -136,6 +138,24 @@ public class XMLManager
         }
         return null;
     }
+
+    public SummonTextInfo Load_SummonText(int id)
+    {
+        SummonTextInfo temp = new SummonTextInfo();
+
+        foreach(XmlNode node in summonTable)
+        {
+            if(id == int.Parse(node.SelectSingleNode("ID").InnerText))
+            {
+                temp.ID = id;
+                temp.Text = node.SelectSingleNode("Text").InnerText;
+
+                return temp;
+            }
+        }
+
+        return null;
+    }
 }
 
 public class CharacterInfo
@@ -169,4 +189,10 @@ public class StageInfo
     public int Enemy4 { get; set; }
     public int Enemy5 { get; set; }
     public int Sum { get; set; }
+}
+
+public class SummonTextInfo
+{
+    public int ID { get; set; }
+    public string Text { get; set; }
 }
