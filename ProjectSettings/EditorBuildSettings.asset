@@ -14,6 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01. Scene/04. EndScene.unity
   - enabled: 1
-    path: Assets/01. Scene/GameScene/01. GameScene TEMP.unity
+    path: Assets/01. Scene/GameScene/01. GameScene.unity
   - enabled: 1
     path: Assets/01. Scene/GameScene/02. GameOverScene.unity

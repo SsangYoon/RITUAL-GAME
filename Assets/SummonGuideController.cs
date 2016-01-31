@@ -28,14 +28,15 @@ namespace Summon
 			{
 				if (id == (int)ResourceIndex.HUMAN)
 				{
+                    Debug.Log("ERROR");
 					_Enable = true;
 				}
 			}
 
 			if (_Enable)
-				this.GetComponent<Image>().enabled = true;
+				this.GetComponent<SpriteRenderer>().enabled = true;
 			else
-				this.GetComponent<Image>().enabled = false;
+				this.GetComponent<SpriteRenderer>().enabled = false;
 		}
 	}
 }

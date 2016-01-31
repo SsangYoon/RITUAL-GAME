@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using DayControll;
 
+using Fade;
+
+
 public enum GameState
 {
     Day,
@@ -19,6 +22,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private List<int> spawnList;
+
+    public GameObject _FadePlane;
 
     private int spawnIndex;
 
@@ -97,10 +102,12 @@ public class GameManager : MonoBehaviour
                 case GameState.Night:
                     break;
                 case GameState.Die:
-                    Application.LoadLevel(5);
+                    _FadePlane.GetComponent<NextScene.NextSceneWithFadeInLerp>()._SceneIndex = 5;
+                    _FadePlane.GetComponent<FadeInLerp>()._FadeIn = true;
                     break;
                 case GameState.GameClear:
-                    Application.LoadLevel(5);
+                    _FadePlane.GetComponent<NextScene.NextSceneWithFadeInLerp>()._SceneIndex = 5;
+                    _FadePlane.GetComponent<FadeInLerp>()._FadeIn = true;
                     break;
             }
         }
@@ -110,7 +117,6 @@ public class GameManager : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log("Looping");
             yield return new WaitForSeconds(Random.Range(1.5f, 3));
             if (gameState == GameState.Night)
             {

@@ -17,13 +17,15 @@ namespace SacrificeContoll
 
         public SpawnResponse[] _SpawnComponents;
 
+        private ResourceManager _ResourceManager;
+
         public GameManager gameManager;
         
         public void Awake()
         {
             _SacrifceList = new List<int>();
             gameManager = GameObject.FindObjectOfType<GameManager>().GetComponent<GameManager>();
-           
+            _ResourceManager = GameObject.FindGameObjectWithTag("DataManager").GetComponent<ResourceManager>();
         }
 
 		public void SpawnFriendly()
@@ -39,6 +41,11 @@ namespace SacrificeContoll
                         _SacrifceList[j + 1] = temp;
                     }
                 }
+            }
+
+            foreach (int id in _SacrifceList)
+            {
+                _ResourceManager.EventCheck(id, -1);
             }
             
 
@@ -62,9 +69,7 @@ namespace SacrificeContoll
             spawnFriendly.GetComponent<Friendly>().ap = spawnInfo.AP;
 
             text.GetComponent<SummonText>().Activate(spawnInfo.Name);
-
-            
-                
+                         
             Reset();	
 		}
 

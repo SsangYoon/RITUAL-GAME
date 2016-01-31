@@ -9,15 +9,14 @@ namespace ApplicationControll
 
         private void Awake()
         {
-            _Exit = false;
+            Invoke("ExitAPP", 1.5f);
         }
 
-		private void Update()
-		{
-			if (_Exit)
-			{
-				Application.Quit();
-			}
-		}
+        private void ExitAPP()
+        {
+
+            Application.Quit();
+
+        }
 	}
 }

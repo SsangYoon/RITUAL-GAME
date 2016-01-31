@@ -15,6 +15,5 @@ public class EnemyNumText : MonoBehaviour {
         temp = XMLManager.Instance.Load_StageData(dayManager._PassedDay - 1);
         
         GetComponent<Text>().text = temp.Sum.ToString();
-        
     }
 }
