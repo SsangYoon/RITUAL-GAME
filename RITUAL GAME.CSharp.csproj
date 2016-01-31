@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.3.1p4</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -72,6 +70,7 @@
     <Compile Include="Assets\03. Scripts\Fade\NextSceneWithFadeInLerp.cs" />
     <Compile Include="Assets\03. Scripts\Game\Action\EnemyAction.cs" />
     <Compile Include="Assets\03. Scripts\Game\Action\FriendlyAction.cs" />
+    <Compile Include="Assets\03. Scripts\Game\EndCanvas.cs" />
     <Compile Include="Assets\03. Scripts\Game\Entity\Enemy.cs" />
     <Compile Include="Assets\03. Scripts\Game\Entity\Friendly.cs" />
     <Compile Include="Assets\03. Scripts\Game\Enum\Enum.cs" />
@@ -138,11 +137,16 @@
     <Compile Include="Assets\ButtonMoveController.cs" />
     <Compile Include="Assets\CameraDayNightController.cs" />
     <Compile Include="Assets\ChangeSceneLerp.cs" />
+    <Compile Include="Assets\CountTextController.cs" />
     <Compile Include="Assets\DayManager.cs" />
     <Compile Include="Assets\DayViewer.cs" />
     <Compile Include="Assets\EventDescribedResponse.cs" />
+    <Compile Include="Assets\EventInformation.cs" />
     <Compile Include="Assets\EventManager.cs" />
     <Compile Include="Assets\ExitApplication.cs" />
+    <Compile Include="Assets\GameMusicControll.cs" />
+    <Compile Include="Assets\GameOverManagement.cs" />
+    <Compile Include="Assets\GameOverTextController.cs" />
     <Compile Include="Assets\NotDestroyOnLoad.cs" />
     <Compile Include="Assets\ResourceCountController.cs" />
     <Compile Include="Assets\ResourceManager.cs" />

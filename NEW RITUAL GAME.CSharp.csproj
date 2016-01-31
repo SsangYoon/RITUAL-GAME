@@ -76,6 +76,7 @@
     <Compile Include="Assets\03. Scripts\Fade\NextSceneWithFadeInLerp.cs" />
     <Compile Include="Assets\03. Scripts\Game\Action\EnemyAction.cs" />
     <Compile Include="Assets\03. Scripts\Game\Action\FriendlyAction.cs" />
+    <Compile Include="Assets\03. Scripts\Game\EndCanvas.cs" />
     <Compile Include="Assets\03. Scripts\Game\Entity\Enemy.cs" />
     <Compile Include="Assets\03. Scripts\Game\Entity\Friendly.cs" />
     <Compile Include="Assets\03. Scripts\Game\Enum\Enum.cs" />
