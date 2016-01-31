@@ -20,10 +20,10 @@ namespace BackgroundControll
 
 
 		// Use this for initialization
-		private void Awake()
+		public void Awake()
 		{
 			// Get Component
-			_DayManager = GameObject.FindGameObjectWithTag("DataManager").GetComponent<DayManager>();
+			_DayManager = GameObject.FindObjectOfType<DayManager>().GetComponent<DayManager>();
 
 			// Get Property
 			_isDay = _DayManager._isDay;

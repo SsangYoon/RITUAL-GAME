@@ -7,6 +7,11 @@ namespace ApplicationControll
 	{
 		public bool _Exit;
 
+        private void Awake()
+        {
+            _Exit = false;
+        }
+
 		private void Update()
 		{
 			if (_Exit)

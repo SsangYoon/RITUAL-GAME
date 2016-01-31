@@ -679,6 +679,26 @@ Prefab:
       propertyPath: _SpawnComponents.Array.data[4]
       value: 
       objectReference: {fileID: 1769338511}
+    - target: {fileID: 11437310, guid: 9d2a03e25e21c9e449ab98af2fffe426, type: 2}
+      propertyPath: _Human
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437310, guid: 9d2a03e25e21c9e449ab98af2fffe426, type: 2}
+      propertyPath: _Pig
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437310, guid: 9d2a03e25e21c9e449ab98af2fffe426, type: 2}
+      propertyPath: _Chicken
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437310, guid: 9d2a03e25e21c9e449ab98af2fffe426, type: 2}
+      propertyPath: _Cow
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437310, guid: 9d2a03e25e21c9e449ab98af2fffe426, type: 2}
+      propertyPath: _Octopus
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d2a03e25e21c9e449ab98af2fffe426, type: 2}
   m_IsPrefabParent: 0
@@ -782,7 +802,7 @@ RectTransform:
   m_Children:
   - {fileID: 1099382075}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 328, y: 184.5}
@@ -928,30 +948,3 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1605856344}
   m_Script: {fileID: 11500000, guid: 14702df817962c54ca466ddb26c06901, type: 3}
---- !u!1 &2090484187
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 120228, guid: 04ed74c9891c991469b99c7ddc63e2e5, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2090484188}
-  m_Layer: 0
-  m_Name: ForeGround
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2090484188
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 417850, guid: 04ed74c9891c991469b99c7ddc63e2e5, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2090484187}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.66, y: -0.5992218, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6

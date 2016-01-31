@@ -10,6 +10,7 @@ namespace SacrificeContoll
 	public class SacrificeManager : MonoBehaviour
 	{
 		public List<int> _SacrifceList;
+        public List<GameObject> _SpawnList;
         public GameObject spawnFriendly;
         public CharacterInfo spawnInfo;
 
@@ -46,29 +47,29 @@ namespace SacrificeContoll
 
             if (spawnInfo == null)
             {
-                _SacrifceList.Clear();
+                Reset();
                 return;
             }
 
-            spawnFriendly = Instantiate(Resources.Load("Friendly/" + spawnInfo.ID)) as GameObject;
+            spawnFriendly = Instantiate(Resources.Load("Friendly/" + spawnInfo.ID), new Vector3(-_SpawnList.Count, 0, 0), new Quaternion(0, 0, 0, 1)) as GameObject;
+            _SpawnList.Add(spawnFriendly);
 
             spawnFriendly.GetComponent<Friendly>().hp = spawnInfo.HP;
             spawnFriendly.GetComponent<Friendly>().ap = spawnInfo.AP;
-
-            for (int i = 0; i < _SpawnComponents.Length; i++)
-            {
-                _SpawnComponents[i]._Enabled = true;
-            }
-
                 
             Reset();	
 		}
 
 		public void Reset()
 		{
-			// Reset
-			_SacrifceList.Clear();
+            for (int i = 0; i < _SpawnComponents.Length; i++)
+            {
+                _SpawnComponents[i]._Enabled = true;
+            }
+            // Reset
+            _SacrifceList.Clear();
 		}
+        
         
 	}
 }

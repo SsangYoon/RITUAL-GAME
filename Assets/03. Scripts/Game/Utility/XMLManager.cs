@@ -114,6 +114,28 @@ public class XMLManager
         }
         return null;
     }
+    public StageInfo Load_StageData(int id)
+    {
+        StageInfo temp = new StageInfo();
+
+        foreach(XmlNode node in stageTable)
+        {
+            if(id == int.Parse(node.SelectSingleNode("ID").InnerText))
+            {
+                temp.ID = id;
+                temp.Name = node.SelectSingleNode("Name").InnerText;
+                temp.Enemy1 = int.Parse(node.SelectSingleNode("Enemy01").InnerText);
+                temp.Enemy2 = int.Parse(node.SelectSingleNode("Enemy02").InnerText);
+                temp.Enemy3 = int.Parse(node.SelectSingleNode("Enemy03").InnerText);
+                temp.Enemy4 = int.Parse(node.SelectSingleNode("Enemy04").InnerText);
+                temp.Enemy5 = int.Parse(node.SelectSingleNode("Enemy05").InnerText);
+                temp.Sum = int.Parse(node.SelectSingleNode("Sum").InnerText);
+
+                return temp;
+            }
+        }
+        return null;
+    }
 }
 
 public class CharacterInfo
@@ -137,3 +159,14 @@ public class EnemyInfo
     public int AP { get; set; }
 }
 
+public class StageInfo
+{
+    public int ID { get; set; }
+    public string Name { get; set; }
+    public int Enemy1 { get; set; }
+    public int Enemy2 { get; set; }
+    public int Enemy3 { get; set; }
+    public int Enemy4 { get; set; }
+    public int Enemy5 { get; set; }
+    public int Sum { get; set; }
+}
