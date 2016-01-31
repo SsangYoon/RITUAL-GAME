@@ -149,6 +149,7 @@
     <Compile Include="Assets\EventInformation.cs" />
     <Compile Include="Assets\EventManager.cs" />
     <Compile Include="Assets\ExitApplication.cs" />
+    <Compile Include="Assets\FireEffectGuide.cs" />
     <Compile Include="Assets\GameMusicControll.cs" />
     <Compile Include="Assets\GameOverManagement.cs" />
     <Compile Include="Assets\GameOverTextController.cs" />
